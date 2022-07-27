@@ -51,7 +51,7 @@ namespace GeneralStoreAPI.Data
             {
                 entity.ToTable("Transactions", "dev");
 
-                entity.Property(e => e.DateOfTransaction).HasColumnType("datetime");
+
 
                 entity.HasOne(d => d.Customer)
                     .WithMany(p => p.Transactions)
